@@ -1,0 +1,173 @@
+
+body {
+    background-color: #000000;
+    color: white;
+    box-sizing: border-box;
+    
+}
+
+nav li {
+    display: inline-block;
+}
+
+/*----- Select card page -----*/
+
+.cards {
+    float: left;
+    width: 205px;
+    height: 360px;
+    padding: 2px 16px;
+    margin: 15px;
+    text-align: center;
+    background-color: #2d545e;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    color: black;
+    border: 8px solid #d4af37;
+}
+
+h1 {
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 30px;
+    text-shadow: 2px 2px #2d545e;
+   
+}
+
+.cards hr {
+    background-color: #d4af37;
+    padding: 1px;
+    border: none;
+}
+
+.cards h2 {
+    font-size: 21px;   
+}
+
+.cards p {
+    font-size: 14px;
+}
+
+.cards img {
+    width: 30%;
+}
+
+.cards h3 {
+    font-size: 16px;   
+}
+
+.cards h4 {
+    font-size: 18px;
+}
+
+.cards button {
+    padding: 8px 30px;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    background-color: #2d545e;
+    cursor: pointer;
+    color: #d4af37;
+    
+}
+
+.cards img {
+    width: 80px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .cards {
+        width: 165px;
+        margin-left: 30px;
+        height: 380px;
+        
+       
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .cards {
+        width: 60%;
+        margin-left: 50px;
+    
+        
+       
+    }
+}
+/*#DAC667 #7790A6 */
+
+/*------ Boardgame page --------*/
+
+
+.game-container {
+    margin: auto;
+    width: 416px;
+    border: 2px solid #d4af37;
+    padding: 10px;
+}
+
+.tiles {
+    width: 60px;
+    padding: 2px;
+}
+
+
+#diceNumber {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    margin:10px;
+    margin-left: 320px;
+}
+
+.dice{
+    padding: 10px 20px;
+    margin-left: 300px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d4af37;
+    color: white;
+    
+}
+
+
+#token {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 50px;
+    margin-left: 520px;
+    margin-top: 150px;
+}
+
+
+
+/* brettet*/
+.tile {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+        
+}
+
+
+
+
+
+
+
+/*--- Congratulationa page --------*/
+
+
+
+
+
+
+
