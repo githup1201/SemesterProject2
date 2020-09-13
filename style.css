@@ -6,9 +6,25 @@ body {
     
 }
 
-nav li {
-    display: inline-block;
+.tokenIcon {
+    flex-shrink: 1;
+    flex-grow: 1;
+    width: 50%;
 }
+
+#logo {
+   font-size: 24px;
+   padding-top: 40px;
+   padding-left: 30px;
+}
+
+#logo a {
+   color: #d4af37;
+   text-decoration: none;
+   font-family: "Cinzel", serif;
+}
+
+
 
 /*----- Select card page -----*/
 
@@ -18,6 +34,7 @@ nav li {
     height: 360px;
     padding: 2px 16px;
     margin: 15px;
+    margin-top: 50px;
     text-align: center;
     background-color: #2d545e;
     border-radius: 5px;
@@ -29,10 +46,10 @@ nav li {
 h1 {
     color: #d4af37;
     text-align: center;
-    margin-bottom: 10px;
-    padding: 30px;
-    text-shadow: 2px 2px #2d545e;
-   
+    padding: 25px;
+    font-family: "Cinzel", serif;
+    font-size: 21px;
+    letter-spacing: 3px;
 }
 
 .cards hr {
@@ -42,11 +59,14 @@ h1 {
 }
 
 .cards h2 {
-    font-size: 21px;   
+    font-size: 21px;
+    font-family: "Lora", serif;
+   
 }
 
 .cards p {
     font-size: 14px;
+    font-family: "Lato", sans-serif;
 }
 
 .cards img {
@@ -54,11 +74,13 @@ h1 {
 }
 
 .cards h3 {
-    font-size: 16px;   
+    font-size: 16px;
+    font-family: "Lora", serif;
 }
 
 .cards h4 {
     font-size: 18px;
+    font-family: "Cinzel", serif;
 }
 
 .cards button {
@@ -68,21 +90,64 @@ h1 {
     background-color: #2d545e;
     cursor: pointer;
     color: #d4af37;
+    font-family: "Lato", sans-serif;
     
+}
+
+.cards button:hover {
+    background-color:black;
+}
+
+.cards button:focus {
+    background-color: #d4af37;
+    color: black;
 }
 
 .cards img {
     width: 80px;
 }
 
+#start {
+    padding: 20px 30px;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    background-color: black;
+    color: #d4af37;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    margin: auto;
+}
+
+#start a {
+   text-decoration: none;
+   color: white;
+   
+}
+
+footer {
+    background-color: black;
+    padding-top: 50px;
+    color: #2d545e;
+    font-family: "Lora", serif;
+    margin-top: 50px;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+
+
 
 @media screen and (max-width: 600px) {
     .cards {
         width: 165px;
         margin-left: 30px;
-        height: 380px;
+        height: 380px;   
+    }
+    
+    h1 {
+        font-size: 18px;
         
-       
     }
 }
 
@@ -95,23 +160,38 @@ h1 {
        
     }
 }
-/*#DAC667 #7790A6 */
+
 
 /*------ Boardgame page --------*/
 
+.tile {
+    text-align: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background-color: #2d545e;
+    flex-direction: row;
+    display: flex;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
 
 .game-container {
-    margin: auto;
-    width: 416px;
+    width: 500px;
+    height: 500px;
     border: 2px solid #d4af37;
-    padding: 10px;
-}
+    padding: 15px;
+    display: flex;
+    flex-grow: 1;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-basis: 100%;
 
-.tiles {
-    width: 60px;
-    padding: 2px;
 }
-
 
 #diceNumber {
     width: 30px;
@@ -121,8 +201,9 @@ h1 {
     text-align: center;
     font-size: 28px;
     padding: 10px;
-    margin:10px;
     margin-left: 320px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 .dice{
@@ -132,41 +213,66 @@ h1 {
     border: none;
     border-radius: 5px;
     background-color: #d4af37;
-    color: white;
+    color: black;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
     
 }
 
 
-#token {
-    position: absolute;
-    top: 0;
-    left: 0; 
-    width: 50px;
-    margin-left: 520px;
-    margin-top: 150px;
+
+
+
+/*--- Final page --------*/
+
+#board {
+    background-image: url(images/map.jpg);
 }
 
 
-
-/* brettet*/
-.tile {
-    position: relative;
-    width: 10px;
-    height: 10px;
-    border: 1px solid white;
-        
+#congrats-container {
+    margin: auto;
+    width: 450px;
+    height: 400px;
+    margin-top: 20px;
+    border: 2px solid ;
+    border-radius: 5px;
 }
 
+#text-final {
+    font-size: 36px;
+    
+}
 
+canvas {
+   
+    width: 1100px;
+    height: 300px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 50px;
+}
 
+#again-btn {
+    padding: 18px 25px;
+    text-decoration: none;
+    background-color: black;
+    color: #d4af37;
+    border: 2px solid #d4af37;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    display: flex;
+    margin: auto;
+    cursor: pointer;
+    width: 80px;
+}
 
-
-
-
-/*--- Congratulationa page --------*/
-
-
-
+#again-btn:hover {
+    color: black;
+    border: none;
+    background-color: #d4af37;
+}
 
 
 
